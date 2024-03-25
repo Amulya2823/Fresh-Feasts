@@ -34,8 +34,8 @@ const Body = () => {
     }  
 
     return(
-        <div>
-            <div className='flex items-center'>
+        <div >
+            <div className='flex items-center justify-center'>
 
                 <button className="px-4 py-2 rounded-md m-4 bg-green-300"
                 onClick={ () => {
@@ -58,7 +58,7 @@ const Body = () => {
                </div>
             </div>
 
-            <div>
+            <div >
                 <div className='flex flex-wrap'>
                     {filteredResturants.map( (restaurant) => (
                     <Link key={restaurant.info.id} to={"/restuarants/" +restaurant.info.id}>
