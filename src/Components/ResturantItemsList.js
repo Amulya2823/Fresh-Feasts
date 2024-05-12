@@ -1,6 +1,14 @@
+import { useDispatch } from "react-redux";
 import { RES_URL } from "../utils/constants";
+import { addItem } from "../utils/cartSlice";
 
 const RestuarantItemList = ({items}) => {
+    const dispatch = useDispatch();
+
+    const handler = (item) => {
+        dispatch(addItem(item));
+    }
+
     return <div>
         {items.map( item => <div key={item.card.info.id}
         className="flex justify-between text-left border-b-2"
@@ -15,7 +23,11 @@ const RestuarantItemList = ({items}) => {
             </div>
         </div>
         <div className="w-3/12 p-4 ">
-            <img src={ RES_URL + item.card.info.imageId} className="rounded-lg"></img>
+            { item.card.info.imageId ? <img src={RES_URL + item.card.info.imageId} className="rounded-lg"></img> : "" }
+            <div>
+                <button onClick={() => handler(item)}   className="rounded-lg bg-slate-200 p-3 m-3 w-32 hover:shadow-xl">ADD</button>
+            </div>
+        
         </div>
             
         </div>)}

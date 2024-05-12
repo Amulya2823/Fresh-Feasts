@@ -1,13 +1,10 @@
 import { useState } from "react";
 import RestuarantItemList from "./ResturantItemsList";
 
-const RestuarantCategory = ({data}) => {
-    
-    const [collapse , setCollapse] = useState(false)
 
+const RestuarantCategory = ({data , collapse ,setShowIndex }) => {
     const handleClick = () => {
-        setCollapse(!collapse)
-
+        setShowIndex();
     }
 
     return <div className="w-1/2 cursor-pointer p-5 mx-auto my-5 shadow-lg bg-gray-100 font-bold">
