@@ -2,7 +2,6 @@ import { RES_URL } from "../utils/constants";
 
 const Rescards = (props) => {
     const {resData} = props
-
     const {
         cloudinaryImageId,
         name,

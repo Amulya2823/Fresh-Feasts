@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import ContactUs from "../ContactUs";
+import ContactUs from "../Components/ContactUs"
 import "@testing-library/jest-dom";
 
 describe("all the test cases of contact us page", () => {
