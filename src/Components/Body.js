@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import Slider from "./Slider";
+import { MAIN_API } from "../utils/constants";
 
 const Body = () => {
   const [listOfRestuarants, setlistOfRestuarants] = useState([]);
@@ -11,12 +13,8 @@ const Body = () => {
 
   const [searchtext, setsearchtext] = useState("");
 
-  const CardwithOfferlabel = withOfferLabel(Rescards);
-
   const fetchData = async () => {
-    const data = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.5171428&lng=78.315742&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
-    );
+    const data = await fetch(MAIN_API);
     const json = await data.json();
 
     setlistOfRestuarants(
@@ -45,9 +43,11 @@ const Body = () => {
 
   return (
     <div>
+      <Slider />
+
       <div className="flex justify-center">
         <button
-          className="px-4 py-2 rounded-md m-4 bg-green-300"
+          className="px-4 py-4 rounded-md m-4 bg-orange-300 text-2xl font-bold"
           onClick={() => {
             const filterbutton = listOfRestuarants.filter(
               (res) => res?.info?.avgRating >= 4
@@ -60,7 +60,7 @@ const Body = () => {
 
         <div>
           <input
-            className=" w-72 h-10 border border-solid border-black"
+            className=" w-[500px] h-[50px] border border-solid border-black rounded-lg m-2"
             type="text"
             placeholder="Search for restuarant"
             value={searchtext}
@@ -70,7 +70,7 @@ const Body = () => {
           ></input>
 
           <button
-            className="px-4 py-2 rounded-md m-4 bg-green-300"
+            className="px-4 py-4 rounded-md m-4 bg-orange-300 font-bold text-2xl"
             onClick={() => {
               const filteredlistofres = listOfRestuarants.filter((restuarant) =>
                 restuarant?.info?.name
@@ -85,16 +85,21 @@ const Body = () => {
         </div>
       </div>
 
-      <div>
-        <div className="flex flex-wrap">
-          {filteredResturants.map((restaurant) => (
-            <Link
-              key={restaurant.info.id}
-              to={"/restuarants/" + restaurant.info.id}
-            >
-              {<Rescards resData={restaurant} />}
-            </Link>
-          ))}
+      <div className="max-w-[1400px] mx-auto p-4 ">
+        <div className="font-bold text-4xl m-2 p-2">
+          Top Rated Restuarants in Hyderabad
+        </div>
+        <div>
+          <div className="flex flex-wrap justify-between gap-6 p-4">
+            {filteredResturants.map((restaurant) => (
+              <Link
+                key={restaurant.info.id}
+                to={"/restuarants/" + restaurant.info.id}
+              >
+                {<Rescards resData={restaurant} />}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </div>
