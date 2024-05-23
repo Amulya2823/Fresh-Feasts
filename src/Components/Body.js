@@ -1,7 +1,6 @@
 //import resList from "../utils/mockdata";
 import Rescards, { withOfferLabel } from "./ResCards";
 import { useState, useEffect } from "react";
-import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import Slider from "./Slider";
@@ -10,7 +9,7 @@ import { MAIN_API } from "../utils/constants";
 const Body = () => {
   const [listOfRestuarants, setlistOfRestuarants] = useState([]);
   const [filteredResturants, setfilteredRestuarants] = useState([]);
-
+  
   const [searchtext, setsearchtext] = useState("");
 
   const fetchData = async () => {
@@ -36,10 +35,6 @@ const Body = () => {
         Looks Like you are offline! Please check your internet connection!
       </h1>
     );
-
-  if (listOfRestuarants.length === 0) {
-    return <Shimmer />;
-  }
 
   return (
     <div>

@@ -5,8 +5,10 @@ const Rescards = (props) => {
   const { cloudinaryImageId, name,avgRating, sla, costForTwo ,areaName} =
     resData?.info;
 
+console.log(resData);
+
   return (
-    <div className="flex hover:shadow-2xl p-3 hover:bg-slate-50">
+    <div className="flex shadow-2xl rounded-lg p-3 hover:bg-slate-100">
       <div className="w-[350px]">
         <div className="h-[300px] rounded-lg overflow-hidden">
           <img

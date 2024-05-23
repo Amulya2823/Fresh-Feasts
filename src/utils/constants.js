@@ -12,5 +12,3 @@ export const SLIDER_API =
 
 export const MAIN_API =
   "https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.5171428&lng=78.315742&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
-
-

@@ -1,0 +1,70 @@
+{
+    "info": {
+        "id": "111941",
+        "name": "Wander - Shawarmas and Momo",
+        "cloudinaryImageId": "brcqizpr7oosofwlpnso",
+        "locality": "Telangana",
+        "areaName": "Hafeezpet",
+        "costForTwo": "₹150 for two",
+        "cuisines": [
+            "Lebanese",
+            "Tibetan"
+        ],
+        "avgRating": 3.9,
+        "parentId": "19695",
+        "avgRatingString": "3.9",
+        "totalRatingsString": "5K+",
+        "sla": {
+            "deliveryTime": 34,
+            "lastMileTravel": 7.5,
+            "serviceability": "SERVICEABLE",
+            "slaString": "30-35 mins",
+            "lastMileTravelString": "7.5 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2024-05-24 06:50:00",
+            "opened": true
+        },
+        "badges": {},
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {},
+                "textBased": {},
+                "textExtendedBadges": {}
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "40% OFF",
+            "subHeader": "UPTO ₹80"
+        },
+        "orderabilityCommunication": {
+            "title": {},
+            "subTitle": {},
+            "message": {},
+            "customIcon": {}
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {
+        "context": "seo-data-e289c761-439d-46ed-a19b-1f62bacbdbc9"
+    },
+    "cta": {
+        "link": "https://www.swiggy.com/restaurants/wander-shawarmas-and-momo-telangana-hafeezpet-hyderabad-111941",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+    },
+    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+}
