@@ -29,7 +29,7 @@ const Header = () => {
             <li className="p-4 m-4 cursor-pointer  hover:text-[#fc8019]">
               <Link to="/cart">
                 <FaCartShopping className="inline" />
-                <sup className="p-2 text-2xl">{cartItems.length}</sup>
+                <sup className="p-2 text-2xl" data-testid="cart">{cartItems.length}</sup>
               </Link>
             </li>
             <button

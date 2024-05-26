@@ -55,3 +55,5 @@ it("Should render all the top rated resturants" , async() => {
   const cardsAfterFilter = screen.getAllByTestId("resCard")
   expect(cardsAfterFilter.length).toBe(6)
 })
+
+

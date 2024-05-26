@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1716700479482" clover="3.2.0">
-  <project timestamp="1716700479483" name="All files">
-    <metrics statements="78" coveredstatements="66" conditionals="8" coveredconditionals="2" methods="31" coveredmethods="22" elements="117" coveredelements="90" complexity="0" loc="78" ncloc="78" packages="2" files="10" classes="10"/>
+<coverage generated="1716721702117" clover="3.2.0">
+  <project timestamp="1716721702117" name="All files">
+    <metrics statements="118" coveredstatements="108" conditionals="20" coveredconditionals="13" methods="48" coveredmethods="41" elements="186" coveredelements="162" complexity="0" loc="118" ncloc="118" packages="2" files="16" classes="16"/>
     <package name="Components">
-      <metrics statements="58" coveredstatements="51" conditionals="8" coveredconditionals="2" methods="24" coveredmethods="20"/>
+      <metrics statements="89" coveredstatements="82" conditionals="20" coveredconditionals="13" methods="38" coveredmethods="34"/>
       <file name="Body.js" path="C:\Users\Amulya Reddy\Desktop\Swiggy\src\Components\Body.js">
         <metrics statements="23" coveredstatements="22" conditionals="2" coveredconditionals="1" methods="9" coveredmethods="9"/>
         <line num="9" count="1" type="stmt"/>
@@ -30,6 +30,15 @@
         <line num="76" count="1" type="stmt"/>
         <line num="91" count="35" type="stmt"/>
       </file>
+      <file name="Cart.js" path="C:\Users\Amulya Reddy\Desktop\Swiggy\src\Components\Cart.js">
+        <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+      </file>
       <file name="ContactUs.js" path="C:\Users\Amulya Reddy\Desktop\Swiggy\src\Components\ContactUs.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
@@ -37,10 +46,10 @@
       </file>
       <file name="Header.js" path="C:\Users\Amulya Reddy\Desktop\Swiggy\src\Components\Header.js">
         <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="3"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="10" count="5" type="stmt"/>
-        <line num="12" count="3" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="5" type="stmt"/>
+        <line num="10" count="9" type="stmt"/>
+        <line num="12" count="5" type="stmt"/>
         <line num="38" count="1" type="cond" truecount="1" falsecount="1"/>
       </file>
       <file name="ResCards.js" path="C:\Users\Amulya Reddy\Desktop\Swiggy\src\Components\ResCards.js">
@@ -54,6 +63,43 @@
         <line num="75" count="2" type="stmt"/>
         <line num="76" count="0" type="stmt"/>
         <line num="77" count="0" type="stmt"/>
+      </file>
+      <file name="RestuarantCategory.js" path="C:\Users\Amulya Reddy\Desktop\Swiggy\src\Components\RestuarantCategory.js">
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="10" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="9" count="10" type="stmt"/>
+      </file>
+      <file name="RestuarantMenu.js" path="C:\Users\Amulya Reddy\Desktop\Swiggy\src\Components\RestuarantMenu.js">
+        <metrics statements="12" coveredstatements="12" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="13" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="24" count="40" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="35" count="10" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+      </file>
+      <file name="ResturantItemsList.js" path="C:\Users\Amulya Reddy\Desktop\Swiggy\src\Components\ResturantItemsList.js">
+        <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="3" methods="4" coveredmethods="4"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="15" count="16" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+      </file>
+      <file name="Shimmer.js" path="C:\Users\Amulya Reddy\Desktop\Swiggy\src\Components\Shimmer.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
       </file>
       <file name="Slider.js" path="C:\Users\Amulya Reddy\Desktop\Swiggy\src\Components\Slider.js">
         <metrics statements="17" coveredstatements="13" conditionals="4" coveredconditionals="0" methods="6" coveredmethods="4"/>
@@ -82,27 +128,27 @@
       </file>
     </package>
     <package name="utils">
-      <metrics statements="20" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="2"/>
+      <metrics statements="29" coveredstatements="26" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="7"/>
       <file name="cartSlice.js" path="C:\Users\Amulya Reddy\Desktop\Swiggy\src\utils\cartSlice.js">
-        <metrics statements="5" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
+        <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
       </file>
       <file name="constants.js" path="C:\Users\Amulya Reddy\Desktop\Swiggy\src\utils\constants.js">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="5" count="3" type="stmt"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="11" count="3" type="stmt"/>
-        <line num="14" count="3" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
       </file>
       <file name="ourStore.js" path="C:\Users\Amulya Reddy\Desktop\Swiggy\src\utils\ourStore.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
       </file>
       <file name="useOnlineStatus.js" path="C:\Users\Amulya Reddy\Desktop\Swiggy\src\utils\useOnlineStatus.js">
         <metrics statements="8" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
@@ -114,6 +160,18 @@
         <line num="10" count="2" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
         <line num="15" count="7" type="stmt"/>
+      </file>
+      <file name="useRestaurantData.js" path="C:\Users\Amulya Reddy\Desktop\Swiggy\src\utils\useRestaurantData.js">
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
       </file>
     </package>
   </project>
