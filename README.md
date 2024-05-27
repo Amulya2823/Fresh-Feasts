@@ -1,6 +1,6 @@
 Dive into a world of culinary excellence with "Fresh Feasts" – not just another Swiggy clone, but a testament to passion, innovation, and relentless learning! 💻✨
 
-This Project is not built using **"create-react-app"** or **Vite**
+This Project is not built using **"create-react-app"** or **Vite**.
 
 The Whole project is written from scratch using **PARCEL** Bundler.
 
@@ -38,7 +38,7 @@ From creating a React Element to creating a React DOM to rendering the root to w
 
 ✅Error Handling & 404 Page : Even in the rare event of a hiccup, we've got you covered with our informative 404 page.
 
-✅Fully Responsive : Whether you're on a smartphone, tablet, or desktop, "Full Stack Biriyani" adapts seamlessly to your screen size.
+✅Fully Responsive : Whether you're on a smartphone, tablet, or desktop, "Fresh Feasts" adapts seamlessly to your screen size.
 
 ## How to Use
 
