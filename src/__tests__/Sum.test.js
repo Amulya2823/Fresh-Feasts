@@ -1,6 +1,6 @@
-import {sum} from "../Components/sum"
+import { sum } from "../Components/sum";
 
-test("Calculate the sum of two numbers",() => {
-    const result = sum(3,5)
-    expect(result).toBe(8);
+test("Calculate the sum of two numbers", () => {
+  const result = sum(3, 5);
+  expect(result).toBe(8);
 });

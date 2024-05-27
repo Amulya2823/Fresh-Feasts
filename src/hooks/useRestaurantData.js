@@ -1,5 +1,5 @@
 import { useState , useEffect } from "react";
-import { MENU_API } from "./constants";
+import { MENU_API } from "../utils/constants";
 
 const useRestuarantData = (resId) => {
     const [resData,setresData] = useState(null);

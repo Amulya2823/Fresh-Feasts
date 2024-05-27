@@ -22,12 +22,12 @@ const Slider = () => {
   }, []);
 
   const moveLeft = () => {
-    if (slide == 0) return false
+    if (slide == 0) return false;
     setSlide(slide - 3);
   };
 
   const moveRight = () => {
-    if (slider.length - 8 == slide) return false
+    if (slider.length - 8 == slide) return false;
     setSlide(slide + 3);
   };
 
@@ -38,7 +38,7 @@ const Slider = () => {
         <div className="flex">
           <div
             className=" cursor-pointer flex w-[40px] h-[40px] bg-[#e2e2e7] rounded-full mx-2 justify-center items-center "
-            onClick={moveLeft} 
+            onClick={moveLeft}
           >
             <FaArrowLeft />
           </div>

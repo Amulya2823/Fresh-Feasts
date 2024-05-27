@@ -7,8 +7,7 @@ import { Provider } from "react-redux";
 import ourStore from "../utils/ourStore";
 import Header from "../Components/Header";
 import { BrowserRouter } from "react-router-dom";
-import Cart from "../Components/Cart"
-
+import Cart from "../Components/Cart";
 
 global.fetch = jest.fn(() =>
   Promise.resolve({
@@ -40,17 +39,20 @@ it("Should load the resturant menu component , accordian", async () => {
   expect(screen.getByTestId("cart")).toBeInTheDocument();
 });
 
-it("should have cart items as zero when clicked on clear cart" , async () => {
+it("should have cart items as zero when clicked on clear cart", async () => {
   await act(async () =>
     render(
       <BrowserRouter>
         <Provider store={ourStore}>
-          <Cart /> 
+          <Cart />
         </Provider>
       </BrowserRouter>
-    ));
+    )
+  );
 
-    const clearBtn = screen.getByRole("button" , {name : "Clear Cart"})
-    fireEvent.click(clearBtn)
-    expect(screen.getByText("Your cart is empty , Add Items to your cart")).toBeInTheDocument();
+  const clearBtn = screen.getByRole("button", { name: "Clear Cart" });
+  fireEvent.click(clearBtn);
+  expect(
+    screen.getByText("Your cart is empty , Add Items to your cart")
+  ).toBeInTheDocument();
 });

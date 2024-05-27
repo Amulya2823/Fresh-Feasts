@@ -1,15 +1,15 @@
 //import resList from "../utils/mockdata";
-import Rescards, { withOfferLabel } from "./ResCards";
+import Rescards from "./ResCards";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import useOnlineStatus from "../utils/useOnlineStatus";
+import useOnlineStatus from "../hooks/useOnlineStatus";
 import Slider from "./Slider";
 import { MAIN_API } from "../utils/constants";
 
 const Body = () => {
   const [listOfRestuarants, setlistOfRestuarants] = useState([]);
   const [filteredResturants, setfilteredRestuarants] = useState([]);
-  
+
   const [searchtext, setsearchtext] = useState("");
 
   const fetchData = async () => {
@@ -31,7 +31,7 @@ const Body = () => {
   const onlineStatus = useOnlineStatus();
   if (onlineStatus === false)
     return (
-      <h1>
+      <h1 className="font-bold text-4xl w-2/3 ml-96 m-auto mt-60 ">
         Looks Like you are offline! Please check your internet connection!
       </h1>
     );
@@ -39,7 +39,6 @@ const Body = () => {
   return (
     <div>
       <Slider />
-
       <div className="flex justify-center">
         <button
           className="px-4 py-4 rounded-md m-4 bg-orange-300 text-2xl font-bold"
@@ -57,7 +56,7 @@ const Body = () => {
           <input
             className=" w-[500px] h-[50px] border border-solid border-black rounded-lg m-2 p-2"
             type="text"
-            data-testid = "searchInput"
+            data-testid="searchInput"
             placeholder="Search for Restuarant"
             value={searchtext}
             onChange={(e) => {

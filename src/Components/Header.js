@@ -8,7 +8,7 @@ const Header = () => {
   const [btnName, setbtnName] = useState("Login");
 
   const cartItems = useSelector((store) => store.cart.items);
-  
+
   return (
     <div className="p-[2px] shadow-lg text-gray-500">
       <div className="max-w-[1400px] mx-auto flex justify-between items-center">
@@ -29,7 +29,9 @@ const Header = () => {
             <li className="p-4 m-4 cursor-pointer  hover:text-[#fc8019]">
               <Link to="/cart">
                 <FaCartShopping className="inline" />
-                <sup className="p-2 text-2xl" data-testid="cart">{cartItems.length}</sup>
+                <sup className="p-2 text-2xl" data-testid="cart">
+                  {cartItems.length}
+                </sup>
               </Link>
             </li>
             <button

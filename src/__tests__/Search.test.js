@@ -1,4 +1,4 @@
-import { fireEvent , render,screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import Body from "../Components/Body";
 import MOCK_LIST from "./mocks/restuarantListmock.json";
 import { act } from "react-dom/test-utils";
@@ -22,22 +22,22 @@ it("Should Search restuarant list for input", async () => {
     )
   );
 
-  const countBeforeSearch = screen.getAllByTestId("resCard")
-  expect(countBeforeSearch.length).toBe(9)
+  const countBeforeSearch = screen.getAllByTestId("resCard");
+  expect(countBeforeSearch.length).toBe(9);
 
-  const searchBtn = screen.getByRole("button" , { name : "Search"})
+  const searchBtn = screen.getByRole("button", { name: "Search" });
   expect(searchBtn).toBeInTheDocument();
 
-  const searchInput = screen.getByTestId("searchInput")
+  const searchInput = screen.getByTestId("searchInput");
 
-  fireEvent.change(searchInput , {target : {value : "tiffin"}})
-  fireEvent.click(searchBtn)
+  fireEvent.change(searchInput, { target: { value: "tiffin" } });
+  fireEvent.click(searchBtn);
 
-  const cardsAfterSearch = screen.getAllByTestId("resCard")
-  expect(cardsAfterSearch.length).toBe(2)
+  const cardsAfterSearch = screen.getAllByTestId("resCard");
+  expect(cardsAfterSearch.length).toBe(2);
 });
 
-it("Should render all the top rated resturants" , async() => {
+it("Should render all the top rated resturants", async () => {
   await act(async () =>
     render(
       <BrowserRouter>
@@ -46,14 +46,14 @@ it("Should render all the top rated resturants" , async() => {
     )
   );
 
-  const cardsBeforeFilter = screen.getAllByTestId("resCard")
-  expect(cardsBeforeFilter.length).toBe(9)
+  const cardsBeforeFilter = screen.getAllByTestId("resCard");
+  expect(cardsBeforeFilter.length).toBe(9);
 
-  const filterButton = screen.getByRole("button" , {name : "Top Rated Restuarants"})
-  fireEvent.click(filterButton)
+  const filterButton = screen.getByRole("button", {
+    name: "Top Rated Restuarants",
+  });
+  fireEvent.click(filterButton);
 
-  const cardsAfterFilter = screen.getAllByTestId("resCard")
-  expect(cardsAfterFilter.length).toBe(6)
-})
-
-
+  const cardsAfterFilter = screen.getAllByTestId("resCard");
+  expect(cardsAfterFilter.length).toBe(6);
+});
