@@ -38,8 +38,6 @@ From creating a React Element to creating a React DOM to rendering the root to w
 
 ✅Error Handling & 404 Page : Even in the rare event of a hiccup, we've got you covered with our informative 404 page.
 
-✅Fully Responsive : Whether you're on a smartphone, tablet, or desktop, "Fresh Feasts" adapts seamlessly to your screen size.
-
 ## How to Use
 
 1. Clone the repo
